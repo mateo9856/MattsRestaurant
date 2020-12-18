@@ -1,0 +1,15 @@
+﻿@model Dinner
+
+<div class="dinnerBlock">
+    <h2 class="cardTitle">@Model.Name</h2>
+    <a asp-controller="Dinner" asp-action="Detail" asp-route-id="@Model.DinnerId">
+        <img class="imageInBlock" src="@Url.Content(Model.ImageUrl)" alt=@Model.Name width="200" height="150" />
+    </a>
+    <div style="margin-top:8px;">
+    <h3 class="price">@Model.Price PLN</h3>
+    <a class="btn btn-primary"
+       asp-controller="Cart"
+       asp-action="AddToCart"
+       asp-route-dinnerId="@Model.DinnerId">Add to cart</a>
+    </div>
+</div>

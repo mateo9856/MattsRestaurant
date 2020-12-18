@@ -1,0 +1,13 @@
+﻿@model ShoppingCartViewModel
+
+@if (Model.ShoppingCart.items.Count > 0)
+{
+    <li>
+        <a class="text-white" asp-area="" asp-controller="Cart" asp-action="Index">
+            <i class="fas fa-cart-arrow-down"></i>
+            <span id="cart-status">
+                @Model.ShoppingCart.items.Count
+            </span>
+        </a>
+    </li>
+}

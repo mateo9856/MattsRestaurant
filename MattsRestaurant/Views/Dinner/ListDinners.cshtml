@@ -1,0 +1,13 @@
+﻿@model ListDinnerViewModel
+
+@{
+    ViewData["Title"] = "Dinners";
+}
+
+<div class="dinnersContainer">
+    @foreach (var item in Model.dinners)
+    {
+        <partial name="_DinnerCard" model="item"/>@*Wywołanie partial view - podaje sie nazwe razor view w name a w model do czego ma sie odwolywac wyrazenia w @ w tym przypadku to z tej petli foreach wyrazenie item*@
+    }
+
+</div>

@@ -1,0 +1,14 @@
+﻿@model OrderViewModel
+
+<div class="text-white text-center">
+    <h1>@ViewBag.CheckComplete Thank You!</h1>
+    <p>We will contact you when Dinner will be ready for pickup</p>
+    <h3>Order info:</h3>
+        <ul style="list-style-type:none;">
+            <li><p>Amount: @Model.orderDetail.Amount</p> </li>
+
+            <li><p>Price: @Model.orderDetail.Price</p></li>
+        </ul>
+</div>
+
+

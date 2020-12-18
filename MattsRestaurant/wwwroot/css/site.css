@@ -1,0 +1,246 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.imageDimenssions {
+    width:140px;
+    height:120px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.intro {
+    margin-top: 17px;
+    font-size: 28px;
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+header {
+    max-height: 80px;
+    background-color:rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+header:hover {
+    transition:0.3s;
+    background:black;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.ListFlex {
+    min-width:300px;
+    list-style-type:none;
+    display:flex;
+    margin-top:8px;
+    margin-left:5px;
+    font-size:20px;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+
+body {
+    
+    margin-bottom: 60px;
+    background-image: url('../images/RestaurantBackground.png');
+}
+
+.cardTitle, .price {
+    color:black;
+}
+
+.detailContainer {
+    margin-left:50%;
+    margin-top:20px;
+    transform:translateX(-50%);
+    background-color:white;
+}
+
+.tableStyle {
+    color:white;
+    margin-top:15px;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+.dinnersContainer {
+    margin:auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width:80%;
+}
+
+.dinnerBlock {
+    border: 1px solid;
+    background-color: white;
+    max-width: 340px;
+    max-height:320px;
+    color: black;
+    padding: 12px;
+    flex-basis:33.333333%;
+    margin:5px;
+}
+
+.contact {
+    color:white;
+    text-decoration:none;
+}
+
+.formDiv {
+    max-width:300px;
+    margin:auto;
+}
+
+.price {
+    float:right;
+}
+
+.buttonSubmit {
+    padding:5px;
+}
+
+.buttonSubmit:hover {
+    transition: 0.3s;
+}
+
+.dinnerOfTheDayBlock {
+    margin-left: 50%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    transform: translateX(-50%);
+    max-width: 340px;
+    max-height: 320px;
+    text-align: left;
+}
+
+.imageInBlock {
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.SiteTitle {
+    text-align: center;
+    margin-top:10px;
+    font-size:24px;
+}
+
+.containerDiv {
+    max-width:1800px;
+    min-width:1600px;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; 
+}
+
+@media (max-width:1279px) {
+    .dinnersContainer {
+        max-width:300px;
+    }
+
+    .imageInBlock {
+        width: 120px;
+        height: 100px;
+    }
+
+    .containerDiv {
+        max-width: 300px;
+        margin-left:50%;
+        transform:translateX(-50%);
+    }
+
+    .detailImg {
+        width: 310px;
+        height: 180px;
+    }
+
+    .detailContainer {
+        max-width:400px;
+    }
+}
+
+@media (min-width:1280px) {
+    .imageInBlock {
+        width: 200px;
+        height: 150px;
+    }
+    .detailImg {
+        width:615px;
+        height:340px;
+    }
+    .containerDiv {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .detailContainer {
+        max-width: 800px;
+    }
+}

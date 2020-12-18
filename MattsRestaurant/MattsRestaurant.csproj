@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201102224728_SeedDataAdded.cs" />
+    <Compile Remove="Migrations\20201102224728_SeedDataAdded.Designer.cs" />
+    <Compile Remove="Migrations\20201104061038_DinnerData.cs" />
+    <Compile Remove="Migrations\20201104061038_DinnerData.Designer.cs" />
+    <Compile Remove="Migrations\20201104061746_DinnerData.cs" />
+    <Compile Remove="Migrations\20201104061746_DinnerData.Designer.cs" />
+    <Compile Remove="Migrations\20201110193658_DatabaseUpdated.cs" />
+    <Compile Remove="Migrations\20201110193658_DatabaseUpdated.Designer.cs" />
+    <Compile Remove="Migrations\20201110194355_UpdatedDatavase.cs" />
+    <Compile Remove="Migrations\20201110194355_UpdatedDatavase.Designer.cs" />
+    <Compile Remove="Migrations\20201110200617_UpdatedDatabase.cs" />
+    <Compile Remove="Migrations\20201110200617_UpdatedDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201112175613_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201112175613_NewDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201112175757_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201112175757_NewDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201113215142_Database.cs" />
+    <Compile Remove="Migrations\20201113215142_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201114095522_DinnerDatabase.cs" />
+    <Compile Remove="Migrations\20201114095522_DinnerDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201114100915_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201114100915_NewDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201114101236_Database.cs" />
+    <Compile Remove="Migrations\20201114101236_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201114101335_Database.cs" />
+    <Compile Remove="Migrations\20201114101335_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201114105337_Database.cs" />
+    <Compile Remove="Migrations\20201114105337_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201114113801_Database.cs" />
+    <Compile Remove="Migrations\20201114113801_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201116223036_Database.cs" />
+    <Compile Remove="Migrations\20201116223036_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201117224026_NewDB.cs" />
+    <Compile Remove="Migrations\20201117224026_NewDB.Designer.cs" />
+    <Compile Remove="Migrations\20201117224501_NewDB2.cs" />
+    <Compile Remove="Migrations\20201117224501_NewDB2.Designer.cs" />
+    <Compile Remove="Migrations\20201118160328_ActualDatabase.cs" />
+    <Compile Remove="Migrations\20201118160328_ActualDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201118160447_NewDB.cs" />
+    <Compile Remove="Migrations\20201118160447_NewDB.Designer.cs" />
+    <Compile Remove="Migrations\20201118160650_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201118160650_NewDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201118160730_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201118160730_NewDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20201118160837_NewDatabaseUpdate.cs" />
+    <Compile Remove="Migrations\20201118160837_NewDatabaseUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20201118164913_DatabaseUpdate.cs" />
+    <Compile Remove="Migrations\20201118164913_DatabaseUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20201118165056_Database.cs" />
+    <Compile Remove="Migrations\20201118165056_Database.Designer.cs" />
+    <Compile Remove="Migrations\20201120224322_NewDatabase.cs" />
+    <Compile Remove="Migrations\20201120224322_NewDatabase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.65" />
+  </ItemGroup>
+
+</Project>

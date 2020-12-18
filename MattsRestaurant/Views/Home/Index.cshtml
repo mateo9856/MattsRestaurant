@@ -1,0 +1,21 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <section class="intro">
+    <p>The place of every Kitchen.</p>
+    <p>Welcome to <b style="font-size: 48px;">Matts !</b></p>
+    </section>
+    <section class="dinnerOfDay">
+        <p style="color:white;">Dinner of the day !</p>
+        <div class="dinnerOfTheDayBlock">
+            @foreach (var dinner in Model.dinnerOfTheDay)
+            {
+                <partial name="_DinnerCard" model="dinner" />
+            }
+
+        </div>
+    </section>
+</div>

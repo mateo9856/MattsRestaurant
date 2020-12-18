@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MattsRestaurant</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href= "~/css/site.css"/>
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css"/>
+</head>
+<body>
+    <header>
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img class="imageDimenssions" src="~/images/Matts Reataurant Logo.png" alt="" />
+            </a>
+            <ul class="ListFlex">
+                <li class="">
+                    <a class="text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="">
+                    <a class="text-white" asp-area="" asp-controller="Dinner" asp-action="ListDinners">Dinners</a>
+                </li>
+                @await Component.InvokeAsync("ShoppingCartSummary");
+            </ul>
+
+    </header>
+    <div class="containerDiv">
+        
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-white">
+        <div class="container">
+            <span class="text-white">
+                Contact: <contact address="office@matts.pl" content="office@matts.pl"></contact>
+                Tel: +47444362555
+            </span>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
